@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="max-width:500px; margin:60px auto; padding:0 20px;">
+  <h2>Workout Section</h2>
+
+  <button onclick="addBurn(100, 'Pushups')">Pushups (100 cal)</button>
+  <button onclick="addBurn(200, 'Running')">Running (200 cal)</button>
+  <button onclick="addBurn(150, 'Cycling')">Cycling (150 cal)</button>
+  <button onclick="addBurn(180, 'Jump Rope')">Jump Rope (180 cal)</button>
+
+  <h3 style="margin-top:40px;">Total Calories Burned: <span id="burned">0</span></h3>
+
+  <div style="margin-top:40px; text-align:center;">
+    <a href="dashboard.html"><button>Back to Dashboard</button></a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

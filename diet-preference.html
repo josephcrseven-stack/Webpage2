@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Diet Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass" style="width:420px; max-width:90%; margin:80px auto;">
+  <h2>Choose Your Diet Preference</h2>
+  <p style="margin:20px 0; color:#ccc;">We'll suggest foods that match your goal and style.</p>
+
+  <select id="dietPref" style="margin:20px 0;">
+    <option value="vegetarian">Vegetarian</option>
+    <option value="nonveg">Non-Vegetarian</option>
+    <option value="keto">Keto / Low-Carb</option>
+  </select>
+
+  <button onclick="saveDietPrefAndGo()">Continue to Diet</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

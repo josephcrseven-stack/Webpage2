@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Setup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass" style="width:380px; max-width:90%; margin:60px auto;">
+  <h2>Profile Setup</h2>
+
+  <input type="number" id="age"    placeholder="Age"    min="10" max="120">
+  <select id="gender">
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+  <input type="number" id="height" placeholder="Height (cm)" min="100" max="250">
+  <input type="number" id="weight" placeholder="Weight (kg)" min="30"  max="300">
+
+  <select id="goal">
+    <option>Lose Weight</option>
+    <option>Gain Weight</option>
+    <option>Maintain Weight</option>
+  </select>
+
+  <button onclick="saveProfile()">Save Profile</button>
+
+  <p id="bmiResult" style="margin-top:24px; font-size:1.1rem; min-height:80px; line-height:1.5;"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

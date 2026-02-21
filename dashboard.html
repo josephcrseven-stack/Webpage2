@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="text-align:center; margin:40px 0 30px;">Dashboard</h1>
+
+<div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; padding:0 20px;">
+  <div class="card">
+    <h3>BMI & Category</h3>
+    <p id="bmi">—</p>
+    <p id="bmiCategory" style="font-size:0.95rem; margin-top:8px; min-height:1.4em;"></p>
+  </div>
+
+  <div class="card">
+    <h3>Calories Burned</h3>
+    <p id="burned">0</p>
+    <div class="progress">
+      <div class="progress-bar" id="burnBar"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Calories Gained</h3>
+    <p id="gained">0</p>
+    <div class="progress">
+      <div class="progress-bar" id="gainBar"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Est. Daily Needs</h3>
+    <p id="bmr">— kcal</p>
+    <p id="tdee" style="font-size:0.9rem; color:#ccc;">(moderately active)</p>
+  </div>
+</div>
+
+<div style="text-align:center; margin:50px 20px;">
+  <a href="workout.html"><button>Workout</button></a>
+  <a href="diet.html"><button>Diet</button></a>
+  <a href="history.html"><button>History</button></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
